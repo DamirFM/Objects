@@ -1,3 +1,3 @@
-### make-lint Badge:
+### lint Badge:
 
-[![Lint](https://github.com/DamirFM/objects/workflows/make-lint/badge.svg)](https://github.com/DamirFM/objects/actions)
+[![Lint](https://github.com/DamirFM/Objects/workflows/make-lint/badge.svg)](https://github.com/DamirFM/Objects/actions)
