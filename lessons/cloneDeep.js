@@ -11,7 +11,7 @@ const cloneDeep = (data) => {
       const current = Object.assign({}, data);
       console.log(current);
       if (_.isObject(key)) {
-        Object.entries(obj)
+        Object.entries(current)
       }
     }
   
