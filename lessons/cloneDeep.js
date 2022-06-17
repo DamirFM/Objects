@@ -4,15 +4,12 @@
 // If the value of some property is an object, 
 // then you need to recursively run the implemented function.
 
-const cloneDeep = (data) => {
+const cloneDeep = (object) => {
+  const result = {};
+  const entries = Object.entries(object);
+  for (const [key, value] of entries) {
+    result[key] = isObject(value) ? cloneDeep(value) : value;
+  }
 
-    const keys = Object.keys(data);
-    for (const [key] of keys) {
-      const current = Object.assign({}, data);
-      console.log(current);
-      if (_.isObject(key)) {
-        Object.entries(current)
-      }
-    }
-  
-  };
+  return result;
+};
