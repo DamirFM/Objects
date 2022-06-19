@@ -10,6 +10,6 @@ const cloneDeep = (object) => {
   for (const [key, value] of entries) {
     result[key] = isObject(value) ? cloneDeep(value) : value;
   }
-
+console.log(result);
   return result;
 };
