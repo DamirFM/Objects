@@ -9,4 +9,4 @@ const getDomainInfo = (file) => {
     const name = file.replace(`${scheme}://`, '');
     return {scheme, name};
   };
-  export default getDomainInfo;
+  // export default getDomainInfo;
