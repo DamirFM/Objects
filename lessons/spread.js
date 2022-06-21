@@ -15,10 +15,12 @@
 // createdAt is the current date (in Unix time format. 
 // This number is the number of milliseconds that have passed since midnight, January 1, 1970)
 
-const company = (obj, data) => {
-    const current = {};
-   
-    console.log(data) ;
-  
-  };
-  export default company;
+const make = (item, data) => {
+  const company = { name: item };
+  const start = Date.now();
+  const defObj = { state: 'moderating', createdAt : start };
+  const mergedObject = { ...company, ...defObj, ...data, };
+  console.log(mergedObject);
+ return mergedObject;
+
+};
