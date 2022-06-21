@@ -14,3 +14,9 @@
 // state - moderating
 // createdAt is the current date (in Unix time format. 
 // This number is the number of milliseconds that have passed since midnight, January 1, 1970)
+
+const make = (name, data) => {
+    console.log(name);
+    console.log(data);
+  };
+  export default make;
