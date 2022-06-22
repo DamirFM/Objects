@@ -1,4 +1,4 @@
-// accepting the site name as input and returning information about it:
+// A function that takes the site name as input and returns information about it:
 const getDomainInfo = (file) => {
     let scheme = '';
     if (file.startsWith('https://')) {
