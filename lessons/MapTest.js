@@ -18,3 +18,19 @@
 // If a collision occurs, the function also returns a default value
 // The set() and get() functions take a dictionary as their first parameter. 
 // The pass is by reference, so set() can change it directly.
+
+const make = () => {
+
+};
+export default make;
+
+const set = (map, key, value) => {
+
+};
+export default set;
+
+const get = (map, key, defaultValue = null) => {
+
+};
+
+export default get;
