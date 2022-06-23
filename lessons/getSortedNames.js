@@ -11,13 +11,12 @@ const mainList =    [
   const getSortedNames = (names) => {
     const result = [];
     for (const item of names) {
-    const values = Object.values(item);
-    const [prop] = values;
-    result.push(prop);
-    result.sort();
-    
-    console.log(result);
+      const values = Object.values(item);
+      const [prop] = values;
+      result.push(prop);
+      result.sort();
     }
-    
-      return result;
-    };
+  
+    return result;
+  };
+  
