@@ -17,7 +17,6 @@ export default (company1, company2) => {
 //
 
 
-
 function is(one, two) {
   const absValue = (one.name === two.name && one.state === two.state && one.website === two.website)
     ? true : false;
