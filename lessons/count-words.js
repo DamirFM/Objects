@@ -7,24 +7,24 @@
 import _ from 'lodash';
 
 // BEGIN (write your solution here)
-const countWords = (words) => {
-  const result = {};
-  const newList = words.toLowerCase();
-  const array = _.words(newList);
-  console.log(newList);
- 
+export default function countWords (text) {
+  // before counting we have to make your sentence 
+  // lowercase otherwise we will receive duplicates
+  const lower = text.toLowerCase(); 
+  // here we are transforming a sentence in to the array of words
+  const array = _.words(lower); 
+  // In this step will create the object
+  const result = {}; 
 
   for (const name of array) {
- 
-    // Existence test
-    if (Object.hasOwn(result, name)) {
+    // here we will enumerate elements and check 
+    // if existing object has the indicated property 
+    if (Object.hasOwn(result, name)) { 
       result[name] += 1;
     } else {
       result[name] = 1;
     }
   }
-
   return result;
-};
-export default countWords;
+}
 // END
