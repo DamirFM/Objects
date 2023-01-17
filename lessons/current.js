@@ -20,6 +20,7 @@ const data = {
     },
   };
 
+  
   const keys = ['hosts', 1, 'active'];
 
   const getProp = (data, keys) => {
