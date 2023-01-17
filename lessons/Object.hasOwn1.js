@@ -12,6 +12,7 @@
 //    os: 'linux',
 //  };
 
+
 // BEGIN (write your solution here)
 export default function pick(obj, array) {
  // In this step will create the object
