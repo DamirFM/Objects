@@ -6,6 +6,7 @@ const getDomainInfo = (file) => {
     } else {
       scheme = 'http';
     }
+    
     const name = file.replace(`${scheme}://`, '');
     return {scheme, name};
   };
