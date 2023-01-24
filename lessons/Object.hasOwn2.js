@@ -36,6 +36,7 @@ export default function get (obj, keys) {
     if (!check) {
       return null;
     }
+    
   // B current хранится переданный объект. 
   // Этой строчкой мы перезаписываем эту переменную, 
   // передавая туда значение объекта под ключом key
