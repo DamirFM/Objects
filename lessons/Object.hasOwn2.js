@@ -20,7 +20,6 @@ const data = {
     },
   };
 
-
   const keys = ['hosts', 1, 'active'];
 
 // BEGIN (write your solution here)
@@ -36,7 +35,7 @@ export default function get (obj, keys) {
     if (!check) {
       return null;
     }
-    
+
   // B current хранится переданный объект. 
   // Этой строчкой мы перезаписываем эту переменную, 
   // передавая туда значение объекта под ключом key
