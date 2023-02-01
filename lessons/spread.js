@@ -15,12 +15,20 @@
 // createdAt is the current date (in Unix time format. 
 // This number is the number of milliseconds that have passed since midnight, January 1, 1970)
 
-const make = (item, data) => {
-  const company = { name: item };
-  const start = Date.now();
-  const defObj = { state: 'moderating', createdAt : start };
-  const mergedObject = { ...company, ...defObj, ...data, };
-  console.log(mergedObject);
- return mergedObject;
 
-};
+export default function make(companyName, data) {
+  const state = 'moderating';
+  const createdAt = Date.now();
+  const company = { name: companyName, state: state, createdAt: createdAt, ...data};
+  return company;
+}
+
+// В современном JavaScript добавили специальный оператор,
+// который позволяет выполнять ту же задачу немного короче и, 
+// главное, нагляднее. Он называется spread оператор 
+// (на русском его так и называют "спред оператор"). 
+// Простое поверхностное копирование с помощью спреда:
+
+// Поверхностное копирование
+// const copyOfUser = { ...user };
+// Object.assign({}, user);
