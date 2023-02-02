@@ -20,6 +20,7 @@ const mainList =    [
     return result;
   };
   
+  
   export default function sort(arr) {
     const names = arr.map((user) => user.name);
     return names.sort();
