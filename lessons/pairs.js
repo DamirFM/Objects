@@ -40,3 +40,12 @@ export default function pairs(array) {
     
   
   // END
+
+
+
+  const fromPairs = (arr) => {
+    const getObj = Object.fromEntries(arr);
+    return getObj;
+  };
+  
+  export default fromPairs;
