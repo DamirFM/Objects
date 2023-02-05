@@ -21,6 +21,7 @@ export default function make(companyName, data) {
   const createdAt = Date.now();
   const company = { name: companyName, state: state, createdAt: createdAt, ...data};
   return company;
+  
 }
 
 // В современном JavaScript добавили специальный оператор,
