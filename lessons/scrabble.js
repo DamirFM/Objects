@@ -7,6 +7,7 @@ export default function scrabble(simbols, word) {
     for (const value of values) {
       let current = [value];
       console.assert(current)
+      
     }
   
   }
