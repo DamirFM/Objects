@@ -1,14 +1,17 @@
 
 // BEGIN (write your solution here)
 export default function scrabble(simbols, word) {
-    const array = _.words(word);
-    //console.log(array)
-    const values = Object.values(simbols);
+    const lowSimbols = simbols.toLowerCase();
+    const values = Object.values(lowSimbols);
+    
+    const result = {};
     for (const value of values) {
-      let current = [value];
-      console.assert(current)
-      
+      if (Object.hasOwn(result, value)) {
+        result[value] += 1;
+      } else {
+        result[value] = 1
+      }
     }
-  
-  }
+   console.log(result)
+   }
   // END
