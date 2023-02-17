@@ -12,6 +12,7 @@ export default function scrabble(simbols, word) {
         result[value] = 1
       }
     }
+    
    console.log(result)
    }
   // END
