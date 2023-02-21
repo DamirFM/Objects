@@ -27,8 +27,6 @@ export default function scrabble(simbols, words) {
     } else {
       object1[key] = 1;
     }
-    
-   
   }
   const values1 = Object.values(object1);
   for (const val1 of values1) {
