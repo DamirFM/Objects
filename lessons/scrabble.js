@@ -37,7 +37,6 @@ export default function scrabble(simbols, words) {
       return true
     }
    
-    
   }
 
 }
