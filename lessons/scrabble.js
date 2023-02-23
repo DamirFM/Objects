@@ -8,8 +8,7 @@ export default function scrabble(simbols, words) {
  const lowSimbols = simbols.toLowerCase();
  const values = Object.values(lowSimbols);
   
-  
-  
+
  const object1 = {};
  for (const value of values) {
    const check1 = Object.hasOwn(object1, value);
