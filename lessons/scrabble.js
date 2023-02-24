@@ -7,7 +7,6 @@ import _ from 'lodash';
 export default function scrabble(simbols, words) {
  const lowSimbols = simbols.toLowerCase();
  const values = Object.values(lowSimbols);
-  
 
  const object1 = {};
  for (const value of values) {
