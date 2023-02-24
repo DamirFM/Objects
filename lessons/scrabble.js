@@ -4,41 +4,41 @@
 import _ from 'lodash';
 
 // BEGIN (write your solution here)
-export default function scrabble(simbols, words) {
- const lowSimbols = simbols.toLowerCase();
- const values = Object.values(lowSimbols);
-
- const object1 = {};
- for (const value of values) {
-   const check1 = Object.hasOwn(object1, value);
-  
-   if (check1 ) {
-     object1[value] += 1;
-   } else {
-     object1[value] = 1;
-   }
- };
-  for (const key of words) {
-    const check2 = Object.hasOwn(object1, key);
-    if (check2) {
-      object1[key] -= 1;
-    } else {
-      object1[key] = 1;
-    }
+export default function scr(text, word) {
+  if (text.length === 0) {
+    return false
   }
-  const values1 = Object.values(object1);
-  for (const val1 of values1) {
-    console.log(val1)
-    if (val1 === 0) {
-      return false;
-    } else {
-      return true
+const lower = text.toLowerCase();
+// here we are transforming a sentence in to the array of words
+const array = lower.split('')
+// In this step will create the object
+const result = {};
+
+for (const name of array) {
+  // here we will enumerate elements and check 
+  // if existing object has the indicated property 
+  if (Object.hasOwn(result, name)) {
+    result[name] += 1;
+  } else {
+    result[name] = 1;
+  }
+
+  }
+  for (const key of word) {
+   
+    const path = _.get(result, key)
+    console.log(path)
+   if (path === 0) { return false} 
+    
+      else { return true}
+    
+    
     }
    
   }
+  
+   
 
-}
+
+
 // END
-// Вхождение буквы из слова в строку символов проверить 
-// console.log('Индекс первого вхождения «й» с начала строки равен ' + anyString.indexOf('й'));
-// Отобразит 5
