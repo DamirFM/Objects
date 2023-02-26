@@ -32,7 +32,6 @@ for (const name of array) {
     
       else { return true}
     
-    
     }
    
   }
