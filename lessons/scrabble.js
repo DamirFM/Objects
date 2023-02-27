@@ -36,7 +36,6 @@ for (const name of array) {
    
   }
   
-   
 
 
 
